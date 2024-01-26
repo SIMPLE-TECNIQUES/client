@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&family=Roboto:ital,wght@0,400;1,300&family=Rowdies&family=Teko:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: rgba(36, 45, 73, 0.65);
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #cfcdcd;
+  --cardColor: #ffffffc0;
+  --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  --inputColor: #1C223E1A;
+  --photo: #4CB256;
+  --video: #4A4EB7;
+  --location: #EF5757;
+  --shedule: #E1AE4A;
+}
+*{
+  box-sizing: border-box;
+  padding : 0;
+  border : 0;
+  font-family: 'Poppins', sans-serif;
+}
+img{
+  object-fit: cover;
+}
+
+.grad{
+  background : linear-gradient(106.23deg, #f99827, #f95f35 100%);
+}
+.pshad{
+  box-shadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);;
+}
+.p-sha{
+  border: 2px solid  white;
+}
+.info-border{
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+.pp-sha{
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.btn{
+  background: linear-gradient(-90deg, #5100ff 0%, rgb(121, 10, 249) 100%);
+  transition: all 100ms ease-out;
+}
+.icn{
+  @apply flex flex-col justify-center items-center rounded-sm
+}
+.inp{
+  @apply border-none outline-none bg-[#1C223E1A] p-5 flex-1 rounded-lg
+}
+.bdr{
+  border: 1px solid orangered;
+}
+.authhead{
+  background: transparent;
+  background-image: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  background-clip: text;
+  background-repeat: repeat;
+  background-size: 100%;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.btn:hover{
+  color: rgb(121, 10, 249);
+  background: white;
+  border: 3px solid rgb(121, 10, 249);
+}
+
